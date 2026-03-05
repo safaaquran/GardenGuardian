@@ -3,7 +3,9 @@
 
 def check_temperature(temp_str: str) -> int:
     """
-    Convert input entered to int and validate plant temperature r returns temprature value if valid and valueError if the input is not a number or not in a range from (0 - 40)
+    Convert input entered to int and validate plant temperature
+    returns temprature value if valid and valueError
+    if the input is not a number or not in a range from (0 - 40)
     """
     try:
         temperature: int = int(temp_str)
