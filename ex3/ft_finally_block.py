@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
 
-def water_plants(plant_list: str) -> None:
+def water_plants(plant_list: list[str]) -> None:
     print("Opening watering system")
     try:
         for plant in plant_list:
-            if plant == None:
-                raise Exception("Cannot water None- invalid plant!")
+            if plant is None:
+                print("Cannot water None - invalid plant!")
+                break
             print(f"Watering {plant}")
 
     except Exception as e:
-        print(f"Error: {e}")
+        pass
 
     finally:
         print("Closing watering system (cleanup)")
